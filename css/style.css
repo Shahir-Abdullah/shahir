@@ -169,6 +169,13 @@ a:hover span {
     float:left;
   }
 
+  .topnav a:hover{
+    background-color: rgb(156, 156, 156);
+  }
+
+.awesomefont{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 strong {
     display: block;

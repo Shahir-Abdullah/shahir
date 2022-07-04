@@ -1,11 +1,11 @@
-mybutton = document.getElementById("gotoTopBtn");
+gotoTopBtn = document.getElementById("gotoTopBtn");
 
 
 window.onscroll = () => {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
+    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+        gotoTopBtn.style.display = "block";
       } else {
-        mybutton.style.display = "none";
+        gotoTopBtn.style.display = "none";
       }
 };
 
