@@ -1,0 +1,54 @@
+<a class="skip-link" href="#about">Skip to content</a>
+
+<app-site-header [nav]="portfolio.nav"></app-site-header>
+
+<main class="portfolio-shell">
+  <app-profile-card [profile]="portfolio.profile"></app-profile-card>
+
+  <div class="content-flow">
+    <app-hero-section
+      [profile]="portfolio.profile"
+      [highlights]="portfolio.highlights">
+    </app-hero-section>
+
+    <app-experience-section [experience]="portfolio.experience"></app-experience-section>
+
+    <app-swipe-carousel
+      sectionId="projects"
+      eyebrow="Selected work"
+      title="Projects"
+      [items]="portfolio.projects">
+    </app-swipe-carousel>
+
+    <app-skills-section
+      [skillGroups]="portfolio.skillGroups"
+      [education]="portfolio.education"
+      [practice]="portfolio.practice"
+      [certificates]="portfolio.certificates"
+      [activities]="portfolio.activities">
+    </app-skills-section>
+
+    <app-swipe-carousel
+      sectionId="writing"
+      eyebrow="Ideas"
+      title="Writing"
+      [items]="portfolio.writing">
+    </app-swipe-carousel>
+
+    <app-contact-section [profile]="portfolio.profile"></app-contact-section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div>
+    <h2>Sitemap</h2>
+    <nav aria-label="Footer navigation">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#writing">Writing</a>
+    </nav>
+    <p>&copy; {{ year }} Shahir Abdullah. Built with Angular for GitHub Pages.</p>
+  </div>
+</footer>

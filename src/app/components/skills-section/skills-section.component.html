@@ -1,0 +1,23 @@
+<section id="skills" class="skills-section">
+  <app-section-title
+    eyebrow="Toolkit"
+    title="Skills, study, and practice"
+    description="A compact map of the tools I use and the communities where I keep sharpening them.">
+  </app-section-title>
+
+  <div class="skill-grid">
+    <article class="skill-card" *ngFor="let group of skillGroups">
+      <h3>{{ group.title }}</h3>
+      <ul>
+        <li *ngFor="let skill of group.skills">{{ skill }}</li>
+      </ul>
+    </article>
+  </div>
+
+  <div class="info-grid">
+    <app-info-deck title="Education" [items]="education"></app-info-deck>
+    <app-info-deck title="Problem solving" [items]="practice"></app-info-deck>
+    <app-info-deck title="Certificates" [items]="certificates"></app-info-deck>
+    <app-info-deck title="Activities" [items]="activities"></app-info-deck>
+  </div>
+</section>

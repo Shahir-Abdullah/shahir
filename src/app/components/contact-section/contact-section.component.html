@@ -1,0 +1,18 @@
+<section id="contact" class="contact-section">
+  <app-section-title
+    eyebrow="Elsewhere"
+    title="Contact"
+    description="I am open to conversations around software engineering, applied machine learning, economics, writing, and public speaking.">
+  </app-section-title>
+
+  <div class="contact-grid">
+    <a
+      *ngFor="let link of contactLinks"
+      class="contact-card"
+      [href]="link.href"
+      [attr.data-tone]="link.tone || 'amber'">
+      <span>{{ link.label }}</span>
+      <strong>{{ link.value }}</strong>
+    </a>
+  </div>
+</section>

@@ -1,0 +1,26 @@
+.section-title {
+  margin-bottom: 18px;
+}
+
+p {
+  margin: 0 0 8px;
+  color: var(--amber);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0;
+  font-size: clamp(1.75rem, 3vw, 2.55rem);
+  line-height: 1.08;
+}
+
+span {
+  display: block;
+  max-width: 680px;
+  margin-top: 10px;
+  color: var(--muted);
+}

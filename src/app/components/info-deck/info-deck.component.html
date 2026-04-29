@@ -1,0 +1,19 @@
+<section class="info-deck">
+  <h3>{{ title }}</h3>
+
+  <div class="info-list">
+    <ng-container *ngFor="let item of items">
+      <a *ngIf="item.href; else plainCard" class="info-card" [href]="item.href">
+        <strong>{{ item.title }}</strong>
+        <span>{{ item.meta }}</span>
+      </a>
+
+      <ng-template #plainCard>
+        <article class="info-card">
+          <strong>{{ item.title }}</strong>
+          <span>{{ item.meta }}</span>
+        </article>
+      </ng-template>
+    </ng-container>
+  </div>
+</section>
