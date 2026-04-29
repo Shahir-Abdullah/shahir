@@ -13,7 +13,7 @@ export const portfolioData: PortfolioData = {
     name: 'Shahir Abdullah',
     role: 'Software Engineer 2',
     location: 'Bangladesh',
-    photo: '/images/finalMe.png',
+    photo: 'images/finalMe.png',
     summary: 'Full-stack software engineer and EdTech co-founder building Angular/.NET products, data-heavy systems, and learning platforms used by 50,000+ learners.',
     links: [
       { label: 'Work', value: 'Nifty Coders Ltd', href: 'https://niftycoders.com/', tone: 'teal' },
