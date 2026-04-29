@@ -1,0 +1,20 @@
+<section id="cv" class="cv-section">
+  <div class="cv-heading">
+    <app-section-title
+      eyebrow="CV"
+      [title]="cv.title"
+      [description]="cv.description">
+    </app-section-title>
+
+    <a class="download-button" [href]="cv.file" [download]="cv.downloadName">
+      Download CV
+    </a>
+  </div>
+
+  <div class="pdf-frame">
+    <iframe
+      [src]="safePdfUrl"
+      title="Shahir Abdullah CV PDF">
+    </iframe>
+  </div>
+</section>

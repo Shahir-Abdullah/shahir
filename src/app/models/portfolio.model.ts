@@ -47,6 +47,13 @@ export interface SkillGroup {
   skills: string[];
 }
 
+export interface CvDocument {
+  title: string;
+  description: string;
+  file: string;
+  downloadName: string;
+}
+
 export interface PortfolioData {
   nav: NavItem[];
   profile: Profile;
@@ -59,4 +66,5 @@ export interface PortfolioData {
   certificates: LinkCard[];
   activities: LinkCard[];
   writing: PortfolioCard[];
+  cv: CvDocument;
 }

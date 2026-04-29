@@ -36,6 +36,11 @@
                 "glob": "**/*",
                 "input": "fonts",
                 "output": "fonts"
+              },
+              {
+                "glob": "Shahir_Abdullah_SE.pdf",
+                "input": "src/app/data",
+                "output": "data"
               }
             ],
             "styles": [

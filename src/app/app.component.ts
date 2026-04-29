@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ContactSectionComponent } from './components/contact-section/contact-section.component';
+import { CvSectionComponent } from './components/cv-section/cv-section.component';
 import { ExperienceSectionComponent } from './components/experience-section/experience-section.component';
 import { HeroSectionComponent } from './components/hero-section/hero-section.component';
 import { ProfileCardComponent } from './components/profile-card/profile-card.component';
@@ -13,6 +14,7 @@ import { portfolioData } from './data/portfolio.data';
   standalone: true,
   imports: [
     ContactSectionComponent,
+    CvSectionComponent,
     ExperienceSectionComponent,
     HeroSectionComponent,
     ProfileCardComponent,

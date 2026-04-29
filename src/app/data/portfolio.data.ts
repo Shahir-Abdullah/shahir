@@ -7,6 +7,7 @@ export const portfolioData: PortfolioData = {
     { label: 'Projects', target: 'projects' },
     { label: 'Skills', target: 'skills' },
     { label: 'Writing', target: 'writing' },
+    { label: 'CV', target: 'cv' },
     { label: 'Contact', target: 'contact' }
   ],
   profile: {
@@ -259,5 +260,11 @@ export const portfolioData: PortfolioData = {
       href: 'https://www.linkedin.com/pulse/why-rich-get-richer-shahir-abdullah',
       tags: ['Economics', 'Power laws']
     }
-  ]
+  ],
+  cv: {
+    title: 'Software Engineering CV',
+    description: 'View the latest PDF version of my CV in the browser or download it for later.',
+    file: 'data/Shahir_Abdullah_SE.pdf',
+    downloadName: 'Shahir_Abdullah_SE.pdf'
+  }
 };
