@@ -11,10 +11,16 @@
     </a>
   </div>
 
-  <div class="pdf-frame">
-    <iframe
-      [src]="safePdfUrl"
-      title="Shahir Abdullah CV PDF">
-    </iframe>
+  <div class="pdf-frame" #viewer>
+    <p class="pdf-message" *ngIf="isLoading">Loading CV...</p>
+    <p class="pdf-message" *ngIf="errorMessage">{{ errorMessage }}</p>
+
+    <div class="pdf-pages" *ngIf="!errorMessage">
+      <canvas
+        #pageCanvas
+        *ngFor="let page of pages"
+        [attr.aria-label]="'CV page ' + page">
+      </canvas>
+    </div>
   </div>
 </section>

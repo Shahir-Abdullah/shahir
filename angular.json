@@ -41,12 +41,20 @@
                 "glob": "Shahir_Abdullah_SE.pdf",
                 "input": "src/app/data",
                 "output": "data"
+              },
+              {
+                "glob": "pdf.worker.min.js",
+                "input": "node_modules/pdfjs-dist/build",
+                "output": "assets"
               }
             ],
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "allowedCommonJsDependencies": [
+              "pdfjs-dist"
+            ]
           },
           "configurations": {
             "production": {
